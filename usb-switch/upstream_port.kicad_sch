@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Upstream Port Module")
+  )
+
   (lib_symbols
     (symbol "Connector:USB_C_Receptacle" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at -10.16 29.21 0)
@@ -2481,7 +2485,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid bb4e7130-eb9e-4a8e-ac78-004329f2f96b)
   )
-  (label "I2C_A.SCL" (at 259.08 104.14 90)
+  (label "I2C_A.SCL" (at 259.08 104.14 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bc8aa6b6-db54-4d21-92ff-26df0564f1e9)
   )
@@ -2493,7 +2497,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c4aaa3d2-0305-489f-b6ea-b8d6fb627f47)
   )
-  (label "I2C_A.SDA" (at 262.89 104.14 90)
+  (label "I2C_A.SDA" (at 262.89 104.14 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c64ba1fe-dfde-412f-aef5-fcef974b9321)
   )
@@ -2677,7 +2681,7 @@
   (symbol (lib_id "Interface_USB:FUSB307BMPX") (at 73.66 34.29 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05895787-e7df-4140-abbc-7ec7be227334)
-    (property "Reference" "U5" (at 74.0059 16.51 0)
+    (property "Reference" "U8" (at 74.0059 16.51 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "FUSB307BMPX" (at 74.0059 19.05 0)
@@ -2709,16 +2713,16 @@
     (instances
       (project "usb-switch"
         (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/c506baa8-3fb8-4c1e-b12b-db5db1a9e333"
-          (reference "U5") (unit 1)
-        )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U8") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U11") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
           (reference "U14") (unit 1)
+        )
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+          (reference "U17") (unit 1)
         )
       )
     )
@@ -2797,7 +2801,7 @@
   (symbol (lib_id "project-library:HD3SS3212IRKSR") (at 88.9 101.6 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 252d6144-72a5-4ede-ab1a-418dd01b81e6)
-    (property "Reference" "U6" (at 88.9 68.58 0)
+    (property "Reference" "U9" (at 88.9 68.58 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "HD3SS3212IRKSR" (at 88.9 71.12 0)
@@ -2833,16 +2837,16 @@
     (instances
       (project "usb-switch"
         (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/c506baa8-3fb8-4c1e-b12b-db5db1a9e333"
-          (reference "U6") (unit 1)
-        )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U9") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U12") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
           (reference "U15") (unit 1)
+        )
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+          (reference "U18") (unit 1)
         )
       )
     )
@@ -3059,7 +3063,7 @@
   (symbol (lib_id "project-library:TUSB8043AIRGCR") (at 127 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5d903d19-442f-4413-86a5-93f86cea4b30)
-    (property "Reference" "U7" (at 190.5 26.67 0)
+    (property "Reference" "U10" (at 190.5 26.67 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "TUSB8043AIRGCR" (at 190.5 29.21 0)
@@ -3139,16 +3143,16 @@
     (instances
       (project "usb-switch"
         (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/c506baa8-3fb8-4c1e-b12b-db5db1a9e333"
-          (reference "U7") (unit 1)
-        )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U10") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U13") (unit 1)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
           (reference "U16") (unit 1)
+        )
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+          (reference "U19") (unit 1)
         )
       )
     )
@@ -3167,6 +3171,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 27.94 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "TYPE" "UPSTREAM" (at 24.13 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A9" (uuid ab18fe3d-6f6e-4370-a2ec-87d9fc06821c))
@@ -3352,7 +3359,7 @@
   (symbol (lib_name "TUSB8043AIRGCR_1") (lib_id "project-library:TUSB8043AIRGCR") (at 116.84 148.59 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 802cf9ee-2c3e-44ad-9c52-ae1d7c8561a5)
-    (property "Reference" "U7" (at 198.12 137.16 0)
+    (property "Reference" "U10" (at 198.12 137.16 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Value" "TUSB8043AIRGCR" (at 140.97 140.97 0)
@@ -3432,16 +3439,16 @@
     (instances
       (project "usb-switch"
         (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/c506baa8-3fb8-4c1e-b12b-db5db1a9e333"
-          (reference "U7") (unit 2)
-        )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U10") (unit 2)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/3ea6c733-b856-496c-b2e5-3fc306de3a0b"
           (reference "U13") (unit 2)
         )
-        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/30337322-f4e8-4295-b2ae-df4bab4dbabb"
           (reference "U16") (unit 2)
+        )
+        (path "/e9ad9249-a54d-4a1a-ae9a-437037ccf4af/96db75ba-e971-4b24-b1c6-9f76512c9163"
+          (reference "U19") (unit 2)
         )
       )
     )

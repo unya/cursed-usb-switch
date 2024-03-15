@@ -605,6 +605,18 @@
     [
       "bd481faf-afb4-4033-aa58-68835c3c796f",
       "downstream_port"
+    ],
+    [
+      "54e99b5d-d4df-4f87-a395-d4a83c58cac6",
+      "downstream_port1"
+    ],
+    [
+      "bf9c5e88-d22a-4b64-811c-462fc1062db0",
+      "downstream_port2"
+    ],
+    [
+      "01f2ac7a-cca1-425f-a861-245b68f25933",
+      "downstream_port3"
     ]
   ],
   "text_variables": {}
